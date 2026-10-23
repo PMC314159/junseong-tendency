@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#20291e">
+  <meta name="theme-color" content="#171e1c">
   <meta name="description" content="여름비, 파랑의 성향 안내">
   <title>여름비, 파랑</title>
   <link rel="icon" href="./favicon.ico" sizes="any">
   <style>
     @font-face {
       font-family: 'GmarketSans';
-      src: url('./GmarketSansTTFLight(1).ttf') format('truetype');
+      src: url('./GmarketSansTTFLight.ttf') format('truetype');
       font-style: normal;
       font-weight: 300;
       font-display: swap;
     }
     :root {
       color-scheme: dark;
-      --background: #20291e;
-      --card: #2b3527;
-      --banner: #59684a;
-      --border: #46523b;
-      --text: #e4e8d8;
-      --muted: #c3cdb3;
+      --background: #171e1c;
+      --card: #202926;
+      --banner: #3e5149;
+      --border: #34413b;
+      --text: #e1e7e3;
+      --muted: #b7c7be;
     }
     * { box-sizing: border-box; }
     html { min-height: 100%; }
@@ -43,12 +43,12 @@
     .profile {
       overflow: hidden;
       background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: 27px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
     }
     .banner {
       height: 116px;
-      background: linear-gradient(110deg, #505f43, #6b7956);
+      background: linear-gradient(110deg, #33463f, #4a6055);
     }
     .profile-body {
       position: relative;
@@ -84,15 +84,15 @@
       margin-top: 20px;
       padding: 30px 35px 33px;
       background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: 27px;
-      font-size: 19px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      font-size: 18px;
       line-height: 2;
       word-break: keep-all;
       overflow-wrap: anywhere;
     }
     .notice p { margin: 0; }
-    ::selection { background: #7b8d61; color: #fff; }
+    ::selection { background: #597467; color: #fff; }
     @media (max-width: 600px) {
       main { width: calc(100% - 28px); margin: 26px auto 34px; }
       .profile, .notice { border-radius: 22px; }
