@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20291e">
+  <meta name="description" content="여름비, 파랑의 성향 안내">
+  <title>여름비, 파랑</title>
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <style>
+    @font-face {
+      font-family: 'GmarketSans';
+      src: url('./GmarketSansTTFLight(1).ttf') format('truetype');
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+    }
+    :root {
+      color-scheme: dark;
+      --background: #20291e;
+      --card: #2b3527;
+      --banner: #59684a;
+      --border: #46523b;
+      --text: #e4e8d8;
+      --muted: #c3cdb3;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      background: var(--background);
+      color: var(--text);
+      font-family: 'GmarketSans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      width: min(770px, calc(100% - 40px));
+      margin: 52px auto;
+    }
+    .profile {
+      overflow: hidden;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 27px;
+    }
+    .banner {
+      height: 116px;
+      background: linear-gradient(110deg, #505f43, #6b7956);
+    }
+    .profile-body {
+      position: relative;
+      padding: 72px 40px 39px;
+    }
+    .avatar {
+      position: absolute;
+      top: -54px;
+      left: 40px;
+      display: block;
+      width: 108px;
+      height: 108px;
+      border: 5px solid var(--card);
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      background: var(--background);
+    }
+    .weather {
+      margin: 0 0 12px;
+      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+      font-size: 34px;
+      line-height: 1.25;
+    }
+    h1 {
+      margin: 0;
+      color: var(--muted);
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .notice {
+      margin-top: 20px;
+      padding: 30px 35px 33px;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 27px;
+      font-size: 19px;
+      line-height: 2;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+    .notice p { margin: 0; }
+    ::selection { background: #7b8d61; color: #fff; }
+    @media (max-width: 600px) {
+      main { width: calc(100% - 28px); margin: 26px auto 34px; }
+      .profile, .notice { border-radius: 22px; }
+      .banner { height: 100px; }
+      .profile-body { padding: 65px 24px 30px; }
+      .avatar { left: 24px; top: -48px; width: 96px; height: 96px; }
+      h1 { font-size: 19px; }
+      .notice { margin-top: 16px; padding: 24px; font-size: 16px; line-height: 1.95; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="profile">
+      <div class="banner" aria-hidden="true"></div>
+      <div class="profile-body">
+        <img class="avatar" src="./injang.jpg" alt="여름비, 파랑 프로필 사진" width="108" height="108">
+        <p class="weather" aria-label="비구름">🌧️</p>
+        <!-- 표시 이름을 바꾸려면 아래 문구를 수정하세요. -->
+        <h1>여름비, 파랑</h1>
+      </div>
+    </header>
+
+    <!-- 성향글: 각 p 태그 안의 문장을 수정하면 됩니다. -->
+    <section class="notice" aria-label="성향 안내">
+      <p>‘가비지타임’ 성준수 드림계. 백업 위주로 굴러갑니다.</p>
+      <p>극온리로, 겹드는 보이는 족족 뮤트합니다. 악의 없습니다.</p>
+      <p>1T1D합니다.</p>
+      <p>비팔 알림 꺼두었습니다.</p>
+      <p>드림캐를 드림주의 남친, 남편으로 지칭할 때가 많습니다.</p>
+      <p>드림주를 드림캐보다 더 애정하며 유사먹고 싶어합니다.</p>
+      <p>드림 서사는 모두 자체적으로 창작 후 타로로 살을 붙였으며, 누구에게도 영향 받지 않았습니다.</p>
+      <p>이와 관련해 컨택 받지 않습니다.</p>
+    </section>
+  </main>
+</body>
+</html>
